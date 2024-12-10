@@ -1,0 +1,28 @@
+{
+    "tickets": [
+        {
+            "from": "Dhaka",
+            "to": "Jashore",
+            "seatQuantity": 12,
+            "time": 10.00
+        },
+        {
+            "from": "Dhaka",
+            "to": "Dinajpur",
+            "seatQuantity": 12,
+            "time": 12.00
+        },
+        {
+            "from": "Dhaka",
+            "to": "Narail",
+            "seatQuantity": 12,
+            "time": 2.00
+        },
+        {
+            "from": "Dhaka",
+            "to": "Chittagong",
+            "seatQuantity": 12,
+            "time": 5.00
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../base-learning"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "base-learning"
+	}
+}

@@ -1,9 +1,12 @@
 import React from 'react'
 import Navbar from './shared/Navbar'
+import UserInput from './Tickets/userTravelInput/UserInput'
 
 const Home = () => {
   return (
-    <Navbar></Navbar>
+    <div>
+      <UserInput></UserInput>
+    </div>
   )
 }
 

@@ -1,13 +1,18 @@
 import React from 'react'
-import Login from '../Login/Login'
-import Information from '../Information/Information'
-import Contact from '../Contact/Contact'
-import Home from '../Home'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
   return (
     <>
-      <div>Navbar</div>
+      <div>
+        <div className="navbar">
+          <ul className='flex flex-row space-x-3'>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/information" >Information</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
+          </ul>
+        </div>
+      </div>
     </>
   )
 }
