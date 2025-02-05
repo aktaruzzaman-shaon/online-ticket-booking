@@ -10,15 +10,17 @@ const RouteDetails = () => {
 
     // data load ---------------------------
     useEffect(() => {
-        fetch('http://localhost:5173/data.json')
+        fetch('http://localhost:4000/alltickets')
             .then(res => res.json())
             .then(data => {
-                const findRoute = data.tickets.find((singleRoute) => singleRoute.to === to)
-
-                setRouteData(findRoute)
+                // const findRoute = data.tickets.find((singleRoute) => singleRoute.to === to)
+                setRouteData(data)
+                // console.log(data.data[0])
                 setLoading(false)
             })
     }, [])
+
+    console.log(routeData.data)
 
     return (
         <div>
@@ -26,7 +28,7 @@ const RouteDetails = () => {
             {loading ? "Laoding ..." : ""}
 
             <div>
-                <p className='bg-slate-400 w-60 mx-auto my-3'>{routeData.from} -- to -- {routeData.to}</p>
+                {/* <p className='bg-slate-400 w-60 mx-auto my-3'>{routeData.data.data[0]} -- to -- {routeData.data.data[0]}</p> */}
 
                 <button type="button" className='bg-red-700 p-1 rounded-sm w-44' onClick={() => setViewSeat(!viewSeat)}>{viewSeat ? "Close" : "View Seat"}</button>
 
