@@ -15,7 +15,8 @@ const UserInput = () => {
     // form handler ========================
     const formHandler = (e) => {
         e.preventDefault()
-        navigate(`/tickets/${from}/${to}`)
+        navigate(`/tickets/?from=${from}&to=${to}`)
+        console.log(from, to)
     }
 
     return (
