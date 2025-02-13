@@ -55,6 +55,7 @@ const Seat = (props) => {
         }
     }
 
+    console.log(seatQuantity)
     console.log(selectedSeat, "double clicked seleced seat")
 
     return (

@@ -19,8 +19,12 @@ const RouteDetails = () => {
             .then(data => {
                 setRouteData(data)
                 setLoading(false)
+                setViewSeat(true)
             })
     }, [])
+    if (loading) {
+        return "Loading ..."
+    }
 
     return (
         <div>
@@ -30,7 +34,7 @@ const RouteDetails = () => {
 
                 <button type="button" className='bg-red-700 p-1 rounded-sm w-44' onClick={() => setViewSeat(!viewSeat)}>{viewSeat ? "Close" : "View Seat"}</button>
 
-                {viewSeat ? <Seat seatQuantity={routeData.seatQuantity}></Seat> : ""}
+                {viewSeat ? <Seat seatQuantity={routeData.data[0].seats.length}></Seat> : ""}
 
             </div>}
 
